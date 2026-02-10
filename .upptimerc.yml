@@ -211,3 +211,18 @@ status-website:
       color: #f87171 !important;
       border-radius: 8px !important;
     }
+
+    /* Logo hover: scale + red glow (BRAND.md) */
+    nav .logo {
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+    nav .logo:hover {
+      transform: scale(1.06);
+      filter: drop-shadow(0 0 8px rgba(248, 113, 113, 0.4));
+    }
+    nav .logo img {
+      transition: filter 0.2s ease;
+    }
+    nav .logo:hover img {
+      filter: drop-shadow(0 0 6px rgba(248, 113, 113, 0.3));
+    }
