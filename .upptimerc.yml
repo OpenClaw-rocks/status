@@ -7,6 +7,13 @@ sites:
   - name: Health API
     url: https://openclaw.rocks/api/health
 
+i18n:
+  allSystemsOperational: All systems operational
+  activeIncidents: Active incidents
+  pastIncidents: Past incidents
+  pastScheduledMaintenance: Past scheduled maintenance
+  footer: "This page is [open source]($REPO), powered by [Upptime](https://upptime.js.org)"
+
 status-website:
   cname: status.openclaw.rocks
   logoUrl: https://openclaw.rocks/favicon.svg
@@ -33,12 +40,18 @@ status-website:
       href: https://fonts.gstatic.com
     - rel: stylesheet
       href: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
-  i18n:
-    allSystemsOperational: All systems operational
-    activeIncidents: Active incidents
-    pastIncidents: Past incidents
-    pastScheduledMaintenance: Past scheduled maintenance
-    footer: "This page is [open source]($REPO), powered by [Upptime](https://upptime.js.org)"
+  js: |
+    // Remove emoji from "All systems operational" banner
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll('article.up').forEach(el => {
+        el.childNodes.forEach(node => {
+          if (node.nodeType === 3 && /[\u2705\u2611\u2714\u2713\uD83D\uDFE9]/.test(node.textContent)) {
+            node.textContent = node.textContent.replace(/[\u2705\u2611\u2714\u2713\uD83D\uDFE9]\s*/g, '');
+          }
+        });
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
   css: |
     /* === OpenClaw.rocks Brand Override === */
     /* Override ALL Upptime night theme variables */
