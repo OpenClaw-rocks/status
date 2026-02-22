@@ -4,35 +4,39 @@
     "url": "https://openclaw.rocks",
     "icon": "https://icons.duckduckgo.com/ip3/openclaw.rocks.ico",
     "slug": "open-claw-rocks",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 760,
-    "timeDay": 735,
-    "timeWeek": 724,
-    "timeMonth": 760,
-    "timeYear": 760,
-    "dailyMinutesDown": {}
+    "time": 764,
+    "timeDay": 791,
+    "timeWeek": 740,
+    "timeMonth": 764,
+    "timeYear": 764,
+    "dailyMinutesDown": {
+      "2026-02-22": 0
+    }
   },
   {
     "name": "Health API",
     "url": "https://openclaw.rocks/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/openclaw.rocks.ico",
     "slug": "health-api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 132,
-    "timeDay": 140,
-    "timeWeek": 130,
-    "timeMonth": 132,
-    "timeYear": 132,
-    "dailyMinutesDown": {}
+    "time": 135,
+    "timeDay": 163,
+    "timeWeek": 137,
+    "timeMonth": 135,
+    "timeYear": 135,
+    "dailyMinutesDown": {
+      "2026-02-22": 0
+    }
   }
 ]
